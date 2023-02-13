@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/bmical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="BMI Calculator"
+        android:textColor="#E91E63"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weighttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmical"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/tvborder"
+        android:backgroundTint="#E91E63"
+        android:padding="2dp"
+        android:text=" WEIGHT "
+        android:textColor="#070707"
+        android:textSize="30dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/weightet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bmical"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toRightOf="@id/weighttv"
+        android:background="@drawable/tvborder"
+        android:hint="Enter Weight in kg.."
+        android:padding="12dp"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/heighttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightet"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/tvborder"
+        android:backgroundTint="#E91E63"
+        android:padding="2dp"
+        android:text=" HEIGHT "
+        android:textColor="#0C0C0C"
+        android:textSize="30dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/hightet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightet"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/weighttv"
+        android:background="@drawable/tvborder"
+        android:textColorHint="@color/black"
+        android:hint="Enter Height in cm.."
+        android:padding="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btncal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hightet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#E91E63"
+        android:padding="10dp"
+        app:cornerRadius="10dp"
+        android:text="SUBMIT" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/tvborder"
+        android:padding="30dp"
+        android:text="Answer"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/ans"
+        android:textColor="#050505"/>
+
+</RelativeLayout>
